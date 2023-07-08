@@ -4,7 +4,8 @@ import { FiUser, FiHeart } from "react-icons/fi";
 import { PiBasket } from "react-icons/pi";
 
 import './App.css';
-import Register from "./components/register";
+import Home from "./pages/Home";
+import Register from "./pages/Register";
 
 function App() {
 
@@ -18,21 +19,9 @@ function App() {
   
   return (
     <Routes>
-      <Route path="/" />
+      <Route path="/" element={<Home />} />
       <Route path="register" element={<Register />} />
     </Routes>
-    // <div className="App">
-    //   <div className="nav">
-    //       <h3>Anasayfa</h3>
-    //       <h3>Sana Özel</h3>
-    //       <h3>Beğenebileceklerin</h3>
-    //     <button onClick={loginHandle}  className="btn-1">
-    //       <FiUser />
-    //     </button>
-    //       <PiBasket />
-    //       <FiHeart />
-    //   </div>
-    // </div>
   );
 }
 
