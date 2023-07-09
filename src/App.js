@@ -12,10 +12,6 @@ function App() {
   const [user, setUser] = useState(false);
   const [login, setLogin] = useState(false);
   const [errMessage, setErrMessage] = useState({});
-
-  const loginHandle = () => {
-    
-  }
   
   return (
     <Routes>

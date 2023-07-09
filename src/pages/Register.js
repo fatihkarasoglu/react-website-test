@@ -4,9 +4,9 @@ export default function Register() {
 
     return(
         <div className='container'>
-                <form className='form'>
-                    <h2>Kayıt Ol</h2>
-                    
+            <div className='form'>
+                <form>
+                    <h2>Bize Katıl</h2>   
                     <label>Kullanıcı Adı 
                         <input type='text' name='' required />
                     </label>
@@ -16,8 +16,9 @@ export default function Register() {
                     <label>Şifre
                         <input type="password" name='' required />
                     </label>
-                    <input type="submit" value='Gönder' className='btn' />
+                    <button type='submit'>Gönder</button>
                 </form>
+            </div>
         </div>
     )
 }
